@@ -25,7 +25,10 @@ SECRET_KEY = '+#$f+v8*&4kz!lol4mnszijzm4ih^ec1g2y=w3*6e18jr_pcq*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    u'hackathon.termotronika.usermd.net', 
+        ]
+
 
 
 # Application definition
