@@ -8,4 +8,5 @@ class GameManager(models.Manager):
             return Game.objects.create(id_player_1=player_id,gesture_1=gesture, pending_request=True)
         game.id_player_2 = player_id
         game.gesture_2 = gesture
+        game.save()
         return game
