@@ -12,7 +12,8 @@ from game.manager import GameManager
 def play(request, player_id, gesture):
     game = GameManager().create_game(player_id,gesture)
     if (game.pending_request == True and (game.id_player_2 == 0)):
-        for i in list(range(4)):
+        for i in list(range(10)):
+            game = Game.objects.last()
             if (not game.id_player_2 == 0):
                 break
             else:
